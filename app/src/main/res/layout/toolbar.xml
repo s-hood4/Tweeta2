@@ -1,0 +1,42 @@
+<android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#414347">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/area">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logout"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="logout"
+            android:background="@android:color/transparent"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/twitter_png"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:onClick="compose"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/compose"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+

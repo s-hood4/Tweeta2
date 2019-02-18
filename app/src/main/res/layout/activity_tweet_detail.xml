@@ -1,0 +1,43 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/bararea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svDetails"
+        app:layout_constraintTop_toBottomOf="@+id/bararea">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvBody"
+            android:textSize="40dp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlReplyArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/container">
+
+        <EditText
+            android:id="@+id/etReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write here!" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
