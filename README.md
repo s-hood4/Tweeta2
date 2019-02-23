@@ -45,9 +45,14 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories.
+
+Composing Tweets, Viewing Tweets from List of Tweets, Tweet Character Limit,  Favoriting and Liking Tweets and Embedded Pictures, Twitter Branded Theme, New Tweet Automatically Visible:
 
 <img src='walkthrough2.gif' width='' alt='Video Walkthrough'/>
+
+Infinite Pagination viewing multiple past Tweets:
+
 <img src='walkthrough3.gif' width='' alt='Video Walkthrough'/>
 
 
